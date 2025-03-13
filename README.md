@@ -9,7 +9,7 @@ In this activity, we will:
 
 ### We begin by building a client:
 1. We will be using this API: https://documenter.getpostman.com/view/1296288/UzQuNk3E
-2. Sign up for a key here: https://eskomsepush.gumroad.com/l/api (DO NOT PAY!!)
+2. Sign up for a key here: https://eskomsepush.gumroad.com/l/api (DO NOT PAY!! - choose monthly plan at $0!)
 3. Add the token as an environment variable as we did previously.
 4. Give it a go and test the different endpoints.
 5. Take one of the endpoints data and explore the JSON using: https://jsonformatter.curiousconcept.com/
