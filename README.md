@@ -20,7 +20,10 @@ In this activity, we will:
 
 Code is in this repo for a basic app
 
-### Consult these resources:
+### Next step
+For practice... Build an API client that interests you using one of these free APIs: https://rapidapi.com/collection/list-of-free-apis
+
+### You can consult these resources:
 * https://www.csharp.com/article/consuming-asp-net-web-api-rest-service-in-asp-net-mvc-using-http-client/
 * https://learn.microsoft.com/en-us/aspnet/web-api/overview/advanced/calling-a-web-api-from-a-net-client
 * https://www.youtube.com/watch?v=LZJvdFDCKxM
