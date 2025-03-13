@@ -28,3 +28,4 @@ C:\Users\ebada\OneDrive\Desktop\PROG7311 2025\ESP_Client\ESP_Client\obj\Debug\ne
 C:\Users\ebada\OneDrive\Desktop\PROG7311 2025\ESP_Client\ESP_Client\obj\Debug\net8.0\ESP_Client.pdb
 C:\Users\ebada\OneDrive\Desktop\PROG7311 2025\ESP_Client\ESP_Client\obj\Debug\net8.0\ESP_Client.genruntimeconfig.cache
 C:\Users\ebada\OneDrive\Desktop\PROG7311 2025\ESP_Client\ESP_Client\obj\Debug\net8.0\ref\ESP_Client.dll
+C:\Users\ebada\OneDrive\Desktop\PROG7311 2025\ESP_Client\ESP_Client\obj\Debug\net8.0\ESP_Client.sourcelink.json
