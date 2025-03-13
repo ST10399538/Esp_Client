@@ -7,6 +7,13 @@ In this activity, we will:
 * Make our first API request in dotnet
 * Explore how to convert JSON to C# objects
 
+### Research!
+* Find out what APIs and API clients are...
+* I would begin by Googling and choosing these three results
+  * https://aws.amazon.com/what-is/api/ - its AWS!
+  * https://www.postman.com/api-platform/api-client/ - its Postman!
+  * https://rapidapi.com/blog/api-glossary/client/ - they provide many APIs for us to use
+
 ### We begin by building a client:
 1. We will be using this API: https://documenter.getpostman.com/view/1296288/UzQuNk3E
 2. Sign up for a key here: https://eskomsepush.gumroad.com/l/api (DO NOT PAY!! - choose monthly plan at $0!)
