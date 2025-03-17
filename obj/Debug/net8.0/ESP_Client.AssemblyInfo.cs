@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ESP_Client")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4c83ebaeb29a7702298f52546adfeca8495715a0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+77dbd331aabacf427c5e6a99d5394b583cac4842")]
 [assembly: System.Reflection.AssemblyProductAttribute("ESP_Client")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ESP_Client")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

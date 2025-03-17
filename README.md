@@ -14,7 +14,12 @@ In this activity, we will:
   * https://www.postman.com/api-platform/api-client/ - its Postman!
   * https://rapidapi.com/blog/api-glossary/client/ - they provide many APIs for us to use
 
-### We begin by building a client:
+### You need to build a client that incorporates the following functionality:
+1. Check the api allowance (use /api_allowance)
+1. Allow the user to search for their area (use /areas_search)
+1. Allow the user to view the loadshedding details for their area (use /area)
+
+### Steps:
 1. We will be using this API: https://documenter.getpostman.com/view/1296288/UzQuNk3E
 2. Sign up for a key here: https://eskomsepush.gumroad.com/l/api (DO NOT PAY!! - choose monthly plan at $0!)
 3. Add the token as an environment variable as we did previously.
