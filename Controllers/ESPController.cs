@@ -1,6 +1,7 @@
 using ESP_Client.Models;
 using Microsoft.AspNetCore.Mvc;
 using System.Text.Json;
+using System.Net;
 
 namespace ESP_Client.Controllers
 {
@@ -26,10 +27,30 @@ namespace ESP_Client.Controllers
             HttpResponseMessage response = await espClient.GetAsync("areas_search?text=" + search);
             var jsonResponse = await response.Content.ReadAsStringAsync();
 
-            AreasModel? deserialisedResponse = JsonSerializer.Deserialize<AreasModel>(jsonResponse);
-            return View(deserialisedResponse);
+            if (response.IsSuccessStatusCode) // 200 OK
+            {
+                AreasModel? deserializedResponse = JsonSerializer.Deserialize<AreasModel>(jsonResponse);
+                return View(deserializedResponse);
+            }
 
-            // To Do: Cater for different response codes: 200, 404, 403, 429, 500
+            if (response.StatusCode == HttpStatusCode.NotFound) // 404
+            {
+                ModelState.AddModelError(string.Empty, "Area not found.");
+            }
+            else if (response.StatusCode == HttpStatusCode.Forbidden) // 403
+            {
+                ModelState.AddModelError(string.Empty, "Access denied.");
+            }
+            else if (response.StatusCode == HttpStatusCode.TooManyRequests) // 429
+            {
+                ModelState.AddModelError(string.Empty, "Too many requests. Please try again later.");
+            }
+            else if (response.StatusCode == HttpStatusCode.InternalServerError) // 500
+            {
+                ModelState.AddModelError(string.Empty, "Server error, please try again later.");
+            }
+
+            return View();
         }
 
         public async Task<IActionResult> Details(string id)
@@ -41,11 +62,31 @@ namespace ESP_Client.Controllers
 
             HttpResponseMessage response = await espClient.GetAsync("area?id=" + id);
             var jsonResponse = await response.Content.ReadAsStringAsync();
-            
-            EspResponse? deserialisedResponse = JsonSerializer.Deserialize<EspResponse>(jsonResponse);
-            return View(deserialisedResponse);
 
-            // To Do: Cater for different response codes: 200, 404, 403, 429, 500
+            if (response.IsSuccessStatusCode) // 200 OK
+            {
+                AreasModel? deserializedResponse = JsonSerializer.Deserialize<AreasModel>(jsonResponse);
+                return View(deserializedResponse);
+            }
+
+            if (response.StatusCode == HttpStatusCode.NotFound) // 404
+            {
+                ModelState.AddModelError(string.Empty, "Area not found.");
+            }
+            else if (response.StatusCode == HttpStatusCode.Forbidden) // 403
+            {
+                ModelState.AddModelError(string.Empty, "Access denied.");
+            }
+            else if (response.StatusCode == HttpStatusCode.TooManyRequests) // 429
+            {
+                ModelState.AddModelError(string.Empty, "Too many requests. Please try again later.");
+            }
+            else if (response.StatusCode == HttpStatusCode.InternalServerError) // 500
+            {
+                ModelState.AddModelError(string.Empty, "Server error, please try again later.");
+            }
+
+            return View();
         }
 
     }
