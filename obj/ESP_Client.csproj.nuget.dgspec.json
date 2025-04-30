@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ebada\\OneDrive\\Desktop\\PROG7311 2025\\ESP_Client\\ESP_Client\\ESP_Client.csproj": {}
+    "C:\\Users\\dafel\\Downloads\\Esp_Client\\ESP_Client.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ebada\\OneDrive\\Desktop\\PROG7311 2025\\ESP_Client\\ESP_Client\\ESP_Client.csproj": {
+    "C:\\Users\\dafel\\Downloads\\Esp_Client\\ESP_Client.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ebada\\OneDrive\\Desktop\\PROG7311 2025\\ESP_Client\\ESP_Client\\ESP_Client.csproj",
+        "projectUniqueName": "C:\\Users\\dafel\\Downloads\\Esp_Client\\ESP_Client.csproj",
         "projectName": "ESP_Client",
-        "projectPath": "C:\\Users\\ebada\\OneDrive\\Desktop\\PROG7311 2025\\ESP_Client\\ESP_Client\\ESP_Client.csproj",
-        "packagesPath": "C:\\Users\\ebada\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ebada\\OneDrive\\Desktop\\PROG7311 2025\\ESP_Client\\ESP_Client\\obj\\",
+        "projectPath": "C:\\Users\\dafel\\Downloads\\Esp_Client\\ESP_Client.csproj",
+        "packagesPath": "C:\\Users\\dafel\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\dafel\\Downloads\\Esp_Client\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\ebada\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\dafel\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -68,7 +68,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

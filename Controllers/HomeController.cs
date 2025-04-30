@@ -14,7 +14,7 @@ public class HomeController : Controller
     {
         BaseAddress = new Uri("https://developer.sepush.co.za/business/2.0/"),
     };
-    
+
     public HomeController(ILogger<HomeController> logger)
     {
         _logger = logger;
@@ -30,6 +30,11 @@ public class HomeController : Controller
         var jsonResponse = await response.Content.ReadAsStringAsync();
 
         AllowanceResponse? deserialisedResponse = JsonSerializer.Deserialize<AllowanceResponse>(jsonResponse);
+        if (deserialisedResponse == null || deserialisedResponse.allowance == null)
+        {
+            return View(new Allowance());
+        }
+
         return View(deserialisedResponse.allowance);
 
 

@@ -12,9 +12,9 @@
             <div class="form-group">
                 <label class="control-label">Area</label>
                 <input name="search" class="form-control" />
-                
+
             </div>
-            
+
             <div class="form-group">
                 <input type="submit" value="Search" class="btn btn-primary" style="margin-top:30px;" />
             </div>
@@ -22,7 +22,8 @@
     </div>
 </div>
 
-@{
+@if (Model?.areas != null && Model.areas.Any())
+{
     if (Model != null)
     {
         <table class="table">
@@ -57,7 +58,7 @@
                             @Html.DisplayFor(modelItem => item.region)
                         </td>
                         <td>
-                            @Html.ActionLink("View Details", "Details", "ESP", new { id = item.id})
+                            @Html.ActionLink("View Details", "Details", "ESP", new { id = item.id })
                         </td>
                     </tr>
                 }

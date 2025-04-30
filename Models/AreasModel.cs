@@ -9,6 +9,6 @@ namespace ESP_Client.Models
 
     public class AreasModel
     {
-        public List<Area> areas { get; set; }
+        public List<Area> areas { get; set; } = new List<Area>();
     }
 }
